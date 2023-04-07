@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from CBVwSER import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('',views.CourseList.as_view()),
 ]
