@@ -19,5 +19,6 @@ from CBVwSER import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.CourseList.as_view()),
+    path('course/',views.CourseList.as_view()),
+    path('course/<int:pk>',views.CourseDetail.as_view()),
 ]
